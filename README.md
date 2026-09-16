@@ -1,9 +1,7 @@
 # 🍊 CitrusNet — Citrus Leaf Disease Classification
 
 **A from-scratch lightweight CNN benchmarked against ImageNet transfer-learning backbones for citrus leaf disease/pest classification, with a full data-auditing pipeline, a five-experiment ablation study, and Grad-CAM interpretability.**
-
-> Methodology and Results Report — Subject: Advanced Deep Learning (UAI502)
-> Harjot Singh · Pahul Singh — submitted to Dr. Sushma Jain
+> Harjot Singh · Pahul Singh 
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)]()
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)]()
@@ -132,36 +130,6 @@ flowchart LR
 
 Weight init: **He/Kaiming** for conv layers and the first FC layer, **Glorot/Xavier** for the output layer. Global average pooling means the network is resolution-agnostic — the same weights run on both the 224² and 128² preprocessed variants used for full vs. fast-ablation runs.
 
----
-
-## Repository Structure
-
-> Folder/notebook names below mirror the project's actual pipeline stages as described in the accompanying report (`citrus_common.py` is the one module name confirmed directly in the write-up). Rename to match your working tree if it differs.
-
-```
-citrus-fruit-classification/
-├── data/
-│   ├── raw/                     # extracted Kaggle download (aphids/ gummosis/ healthy/ leaf_minnor/)
-│   ├── metadata.csv             # filepath, label, dims, size, format, pHash — built once, reused everywhere
-│   ├── metadata_split.csv       # + duplicate-group id, split assignment
-│   └── processed/               # resized/normalized 224² and 128² tensors per split
-├── notebooks/
-│   ├── 01_data_audit_and_partitioning.ipynb   # corruption check, pHash, dedup groups, StratifiedGroupKFold
-│   ├── 02_preprocessing_and_augmentation.ipynb
-│   ├── 03_citrusnet_baseline_training.ipynb
-│   ├── 04_ablation_studies.ipynb              # E1–E5
-│   ├── 05_transfer_learning.ipynb             # ResNet50 / EfficientNet-B0 / DenseNet121
-│   └── 06_evaluation_and_interpretability.ipynb  # test-set pass + Grad-CAM
-├── citrus_common.py             # shared dataset/transform module used by every notebook
-├── checkpoints/                 # saved .pt weights (baseline + best ablation + backbones)
-├── results/
-│   ├── figures/                 # loss/accuracy curves, confusion matrices, ROC, Grad-CAM overlays
-│   └── metrics/                 # per-run CSV/JSON metrics
-├── requirements.txt
-└── README.md
-```
-
----
 
 ## Getting Started
 
@@ -368,20 +336,6 @@ CitrusNet **dominates** EfficientNet-B0 outright (better accuracy *and* fewer pa
 - All test-set evaluation was a single pass by design (to avoid test-set leakage via repeated checkpoint selection) — a larger, independently collected test set from different orchards/devices would further validate real-world generalization.
 
 ---
-
-## Citation
-
-If you use this work, please cite it as:
-
-```bibtex
-@techreport{singh2026citrusnet,
-  title        = {Citrus Leaf Disease Classification: A From-Scratch CNN Compared Against Transfer-Learning Architectures},
-  author       = {Singh, Harjot and Singh, Pahul},
-  institution  = {Advanced Deep Learning (UAI502)},
-  note         = {Supervised by Dr. Sushma Jain},
-  year         = {2026}
-}
-```
 
 ## License
 
