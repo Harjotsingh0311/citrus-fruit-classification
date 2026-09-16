@@ -15,7 +15,7 @@ env/
 .vscode/
 
 # Streamlit
-.streamlit/secrets.toml
+.streamlit/config.toml
 
 # Model checkpoints / weights
 checkpoints/
@@ -47,3 +47,9 @@ Thumbs.db
 # Environment / secrets
 .env
 .env.*
+
+#Json files
+*.json
+
+#csv files
+*.csv
