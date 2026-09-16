@@ -1,5 +1,0 @@
-architecture,pretrained_on,phase1_lr,phase1_max_epochs,phase1_early_stop_patience,phase2_lr,phase2_max_epochs,phase2_early_stop_patience,batch_size,weight_decay,dropout,optimizer,scheduler,total_params,classifier_head
-citrusnet,none (trained from scratch),N/A (single-phase training),N/A (single-phase training),N/A (single-phase training),N/A (single-phase training),N/A (single-phase training),N/A (single-phase training),32,0.0001,0.5,Adam,ReduceLROnPlateau,416036,"Linear(256,128)-ReLU-Dropout(0.5)-Linear(128,4)"
-resnet50,ImageNet1K,0.001,15,5,0.0001,50,10,16,0.0001,0.5,Adam,ReduceLROnPlateau,23770820,"Linear(in,128)-ReLU-Dropout(0.5)-Linear(128,4)"
-efficientnet_b0,ImageNet1K,0.001,15,5,0.0001,50,10,16,0.0001,0.5,Adam,ReduceLROnPlateau,4172032,"Linear(in,128)-ReLU-Dropout(0.5)-Linear(128,4)"
-densenet121,ImageNet1K,0.001,15,5,0.0001,50,10,16,0.0001,0.5,Adam,ReduceLROnPlateau,7085572,"Linear(in,128)-ReLU-Dropout(0.5)-Linear(128,4)"
