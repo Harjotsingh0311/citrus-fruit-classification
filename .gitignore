@@ -53,3 +53,6 @@ Thumbs.db
 
 #csv files
 *.csv
+
+# Images
+*.png
