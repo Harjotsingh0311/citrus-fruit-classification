@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Model checkpoints / weights
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
+*.ckpt
+
+# Datasets
+Citrus-Diseases/
+processed/
+data/
+datasets/
+
+# Large/generated files
+*.zip
+*.tar
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*

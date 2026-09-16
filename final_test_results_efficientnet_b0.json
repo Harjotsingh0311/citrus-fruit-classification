@@ -1,0 +1,50 @@
+{
+  "architecture": "efficientnet_b0",
+  "test_accuracy": 0.9291666666666667,
+  "macro_precision": 0.9433361629881154,
+  "macro_recall": 0.9338341346153847,
+  "macro_f1": 0.9324848460438608,
+  "weighted_precision": 0.9430001414827391,
+  "weighted_recall": 0.9291666666666667,
+  "weighted_f1": 0.9297805780990932,
+  "per_class": {
+    "aphids": {
+      "precision": 0.7894736842105263,
+      "recall": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 0.9111111111111111,
+      "f1": 0.8823529411764706,
+      "roc_auc": 0.9807407407407407
+    },
+    "gummosis": {
+      "precision": 0.9838709677419355,
+      "recall": 0.9384615384615385,
+      "sensitivity": 0.9384615384615385,
+      "specificity": 0.9942857142857143,
+      "f1": 0.9606299212598425,
+      "roc_auc": 0.9962197802197803
+    },
+    "healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "leaf_minnor": {
+      "precision": 1.0,
+      "recall": 0.796875,
+      "sensitivity": 0.796875,
+      "specificity": 1.0,
+      "f1": 0.8869565217391304,
+      "roc_auc": 0.9806463068181819
+    }
+  },
+  "mean_roc_auc": 0.9894017069446757,
+  "param_count": 4172032,
+  "model_size_mb": 15.9150390625,
+  "mean_inference_latency_ms": 18.068611999915447,
+  "std_inference_latency_ms": 8.14183674467346,
+  "throughput_images_per_sec": 55.34459426129022
+}

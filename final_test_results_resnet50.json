@@ -1,0 +1,50 @@
+{
+  "architecture": "resnet50",
+  "test_accuracy": 0.9958333333333333,
+  "macro_precision": 0.9951923076923077,
+  "macro_recall": 0.99609375,
+  "macro_f1": 0.9956043115969727,
+  "weighted_precision": 0.9959134615384616,
+  "weighted_recall": 0.9958333333333333,
+  "weighted_f1": 0.9958371556710751,
+  "per_class": {
+    "aphids": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "gummosis": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "healthy": {
+      "precision": 0.9807692307692307,
+      "recall": 1.0,
+      "sensitivity": 1.0,
+      "specificity": 0.9947089947089947,
+      "f1": 0.9902912621359223,
+      "roc_auc": 1.0
+    },
+    "leaf_minnor": {
+      "precision": 1.0,
+      "recall": 0.984375,
+      "sensitivity": 0.984375,
+      "specificity": 1.0,
+      "f1": 0.9921259842519685,
+      "roc_auc": 1.0
+    }
+  },
+  "mean_roc_auc": 1.0,
+  "param_count": 23770820,
+  "model_size_mb": 90.67848205566406,
+  "mean_inference_latency_ms": 8.082304999988992,
+  "std_inference_latency_ms": 2.125815192301037,
+  "throughput_images_per_sec": 123.72708033183133
+}
