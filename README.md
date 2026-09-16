@@ -1,4 +1,4 @@
-git status# 🍊 CitrusNet — Citrus Leaf Disease Classification
+# 🍊 CitrusNet — Citrus Leaf Disease Classification
 
 **A from-scratch lightweight CNN benchmarked against ImageNet transfer-learning backbones for citrus leaf disease/pest classification, with a full data-auditing pipeline, a five-experiment ablation study, and Grad-CAM interpretability.**
 
